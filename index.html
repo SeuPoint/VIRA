@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vira — Sites para pequenos negócios brasileiros</title>
+  <meta name="description" content="A Vira cria sites profissionais para pequenos negócios brasileiros aparecerem no Google e venderem mais. Landing pages a partir de R$ 397." />
+  <meta property="og:title" content="Vira — O Brasil está online. Seu negócio ainda não." />
+  <meta property="og:description" content="Sites profissionais para pequenos negócios brasileiros. Nutricionistas, dentistas, barbearias, restaurantes e muito mais." />
+  <meta property="og:image" content="https://vira.com.br/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════════ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner container">
+      <a href="#" class="navbar__logo" aria-label="Vira — Página inicial">VIRA</a>
+
+      <nav class="navbar__nav" role="navigation" aria-label="Menu principal">
+        <a href="#servicos" class="navbar__link">Serviços</a>
+        <a href="#como-funciona" class="navbar__link">Como funciona</a>
+        <a href="#portfolio" class="navbar__link">Portfólio</a>
+        <a href="#contato" class="navbar__link">Contato</a>
+      </nav>
+
+      <a href="https://wa.me/5500000000000" class="btn btn--mata navbar__cta" target="_blank" rel="noopener noreferrer">
+        Quero meu site →
+      </a>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="navbar__mobile" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Menu mobile">
+        <a href="#servicos" class="navbar__mobile-link">Serviços</a>
+        <a href="#como-funciona" class="navbar__mobile-link">Como funciona</a>
+        <a href="#portfolio" class="navbar__mobile-link">Portfólio</a>
+        <a href="#contato" class="navbar__mobile-link">Contato</a>
+        <a href="https://wa.me/5500000000000" class="btn btn--mata navbar__mobile-cta" target="_blank" rel="noopener noreferrer">
+          Quero meu site →
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-label="Apresentação da Vira">
+
+      <!-- Gradient Dots background animado nas cores da Vira -->
+      <div class="hero__dots" aria-hidden="true"></div>
+
+      <!-- Losangos decorativos -->
+      <div class="hero__shapes" aria-hidden="true">
+        <svg class="hero__diamond hero__diamond--1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="60,8 112,60 60,112 8,60" fill="none" stroke="#C9DCC5" stroke-width="1" opacity="0.25"/>
+        </svg>
+        <svg class="hero__diamond hero__diamond--2" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="40,4 76,40 40,76 4,40" fill="none" stroke="#C9DCC5" stroke-width="1" opacity="0.18"/>
+        </svg>
+        <svg class="hero__diamond hero__diamond--3" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,3 57,30 30,57 3,30" fill="none" stroke="#C9DCC5" stroke-width="1.5" opacity="0.3"/>
+        </svg>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__badge animate-on-scroll">
+          <span class="hero__badge-dot" aria-hidden="true">●</span>
+          Aceitando novos clientes
+        </div>
+
+        <h1 class="hero__title animate-on-scroll">
+          Seu negócio merece<br />ser encontrado.
+        </h1>
+
+        <p class="hero__subtitle animate-on-scroll">
+          A Vira cria sites profissionais para pequenos negócios brasileiros<br class="desktop-only" />
+          aparecerem no Google e venderem mais.
+        </p>
+
+        <div class="hero__actions animate-on-scroll">
+          <a href="https://wa.me/5500000000000" class="btn btn--osso" target="_blank" rel="noopener noreferrer">
+            Quero meu site →
+          </a>
+          <a href="#portfolio" class="btn btn--ghost">
+            Ver portfólio
+          </a>
+        </div>
+
+        <p class="hero__counter animate-on-scroll">
+          já ajudamos <strong>+<span id="counter">0</span></strong> negócios brasileiros
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROVA SOCIAL — LOGOS
+    ════════════════════════════════════════════ -->
+    <section class="logos" aria-label="Clientes da Vira">
+      <div class="logos__inner container">
+        <p class="logos__label">Negócios que já viraram</p>
+      </div>
+      <div class="logos__track-wrapper" aria-hidden="true">
+        <div class="logos__track">
+          <span class="logos__item">Barbearia Dom</span>
+          <span class="logos__item">Clínica Nutri+</span>
+          <span class="logos__item">Salão Éclat</span>
+          <span class="logos__item">Pizzaria Bruta</span>
+          <span class="logos__item">Dr. Ferreira Odonto</span>
+          <span class="logos__item">Estúdio Bela</span>
+          <span class="logos__item">Advocacia Rocha</span>
+          <span class="logos__item">Café do Largo</span>
+          <!-- Duplicata para loop infinito -->
+          <span class="logos__item">Barbearia Dom</span>
+          <span class="logos__item">Clínica Nutri+</span>
+          <span class="logos__item">Salão Éclat</span>
+          <span class="logos__item">Pizzaria Bruta</span>
+          <span class="logos__item">Dr. Ferreira Odonto</span>
+          <span class="logos__item">Estúdio Bela</span>
+          <span class="logos__item">Advocacia Rocha</span>
+          <span class="logos__item">Café do Largo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROBLEMA / URGÊNCIA
+    ════════════════════════════════════════════ -->
+    <section class="problema" id="problema" aria-label="Por que ter um site">
+      <div class="container">
+        <h2 class="problema__title animate-on-scroll">
+          O Brasil pesquisa no Google.<br />Você está aparecendo?
+        </h2>
+
+        <div class="problema__cards">
+          <article class="problema__card animate-on-scroll" aria-label="Estatística: pesquisa online">
+            <div class="problema__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="9" stroke="#0E4F1F" stroke-width="2"/>
+                <path d="M21 21L27 27" stroke="#0E4F1F" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 14h8M14 10v8" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="problema__number">97%</div>
+            <p class="problema__desc">das pessoas pesquisam online antes de contratar qualquer serviço.</p>
+          </article>
+
+          <article class="problema__card animate-on-scroll" aria-label="Estatística: faturamento">
+            <div class="problema__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 24L12 14l6 6 10-12" stroke="#0E4F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="28" cy="8" r="2" fill="#0E4F1F"/>
+              </svg>
+            </div>
+            <div class="problema__number">2x</div>
+            <p class="problema__desc">mais faturamento. Negócios com site vendem o dobro dos sem presença digital.</p>
+          </article>
+
+          <article class="problema__card animate-on-scroll" aria-label="Estatística: concorrência">
+            <div class="problema__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="24" height="18" rx="2" stroke="#0E4F1F" stroke-width="2"/>
+                <path d="M10 8V6a6 6 0 0112 0v2" stroke="#0E4F1F" stroke-width="2"/>
+                <circle cx="16" cy="17" r="2" fill="#0E4F1F"/>
+                <path d="M16 19v3" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="problema__number">Já lá</div>
+            <p class="problema__desc">Seu concorrente já está no Google. Cada dia sem site é cliente perdido.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVIÇOS
+    ════════════════════════════════════════════ -->
+    <section class="servicos" id="servicos" aria-label="Serviços e preços">
+
+      <!-- Padrão Onda SVG decorativo -->
+      <div class="servicos__texture" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="onda" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+              <path d="M0 40 C20 20, 40 60, 80 40" fill="none" stroke="#0E4F1F" stroke-width="1" opacity="0.25"/>
+              <path d="M0 60 C20 40, 60 80, 80 60" fill="none" stroke="#0E4F1F" stroke-width="0.8" opacity="0.18"/>
+              <path d="M0 20 C30 0, 50 40, 80 20" fill="none" stroke="#0E4F1F" stroke-width="0.6" opacity="0.15"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#onda)"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <h2 class="servicos__title animate-on-scroll">O que a Vira entrega.</h2>
+
+        <div class="servicos__cards servicos__cards--dois">
+
+          <!-- Landing Page -->
+          <article class="servico-card animate-on-scroll" aria-label="Serviço: Landing Page">
+            <div class="servico-card__tag">Mais rápido</div>
+            <div class="servico-card__header">
+              <h3 class="servico-card__name">Landing Page</h3>
+              <div class="servico-card__price-wrap">
+                <div class="servico-card__price">R$ 579</div>
+                <span class="servico-card__price-note">pagamento único</span>
+              </div>
+              <p class="servico-card__pitch">Uma página poderosa que transforma visita em cliente. Perfeita para divulgar seu serviço e vender mais.</p>
+            </div>
+            <ul class="servico-card__list" aria-label="O que está incluído">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Design exclusivo para o seu negócio</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>100% responsivo — funciona no celular</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Botão direto pro seu WhatsApp</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO para aparecer no Google</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Domínio e hospedagem inclusos</li>
+            </ul>
+            <div class="servico-card__footer">
+              <p class="servico-card__prazo">Pronto em até <strong>7 dias</strong></p>
+              <a href="https://wa.me/5500000000000" class="btn btn--folha" target="_blank" rel="noopener noreferrer">Começar agora →</a>
+            </div>
+          </article>
+
+          <!-- Site Completo — DESTAQUE -->
+          <article class="servico-card servico-card--destaque animate-on-scroll" aria-label="Serviço: Site Completo — Mais escolhido">
+            <div class="servico-card__badge">Mais escolhido</div>
+            <div class="servico-card__header">
+              <h3 class="servico-card__name">Site Completo</h3>
+              <div class="servico-card__price-wrap">
+                <div class="servico-card__price">R$ 790</div>
+                <span class="servico-card__price-note">pagamento único</span>
+              </div>
+              <p class="servico-card__pitch">Presença digital completa. Até 5 páginas, portfólio e blog para o seu negócio crescer de verdade.</p>
+            </div>
+            <ul class="servico-card__list" aria-label="O que está incluído">
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tudo da Landing Page</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Até 5 páginas completas</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Portfólio e galeria de fotos</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Blog integrado (opcional)</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Google Analytics configurado</li>
+              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 5" stroke="#C9DCC5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>SEO avançado em todas as páginas</li>
+            </ul>
+            <div class="servico-card__footer">
+              <p class="servico-card__prazo">Pronto em até <strong>14 dias</strong></p>
+              <a href="https://wa.me/5500000000000" class="btn btn--osso-mata" target="_blank" rel="noopener noreferrer">Começar agora →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         COMO FUNCIONA
+    ════════════════════════════════════════════ -->
+    <section class="como-funciona" id="como-funciona" aria-label="Processo de trabalho">
+      <div class="container">
+        <h2 class="como-funciona__title animate-on-scroll">Simples assim.</h2>
+
+        <div class="como-funciona__steps" role="list">
+
+          <div class="passo animate-on-scroll" role="listitem">
+            <div class="passo__numero" aria-hidden="true">01</div>
+            <div class="passo__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5h18v16H5z" stroke="#0E4F1F" stroke-width="1.5" rx="2"/>
+                <path d="M9 10h10M9 14h7" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="22" cy="22" r="5" fill="#0E4F1F"/>
+                <path d="M20 22l1.5 1.5L24 20" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="passo__titulo">Você manda o WhatsApp</h3>
+            <p class="passo__desc">Sem formulário complicado. É só mandar uma mensagem contando seu negócio.</p>
+          </div>
+
+          <div class="passo__conector" aria-hidden="true"></div>
+
+          <div class="passo animate-on-scroll" role="listitem" style="--delay: 0.1s">
+            <div class="passo__numero" aria-hidden="true">02</div>
+            <div class="passo__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="10" r="5" stroke="#0E4F1F" stroke-width="1.5"/>
+                <path d="M5 24c0-5 18-5 18 0" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 6l2 2-6 6" stroke="#0E4F1F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="passo__titulo">A gente entende seu negócio</h3>
+            <p class="passo__desc">Conversamos sobre seu público, concorrentes e o que você quer alcançar.</p>
+          </div>
+
+          <div class="passo__conector" aria-hidden="true"></div>
+
+          <div class="passo animate-on-scroll" role="listitem" style="--delay: 0.2s">
+            <div class="passo__numero" aria-hidden="true">03</div>
+            <div class="passo__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="20" height="16" rx="2" stroke="#0E4F1F" stroke-width="1.5"/>
+                <path d="M4 9h20" stroke="#0E4F1F" stroke-width="1"/>
+                <path d="M9 14h10M9 17h6" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 24h8" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M14 20v4" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="passo__titulo">Criamos seu site em até 14 dias</h3>
+            <p class="passo__desc">Design, conteúdo e publicação. Você aprova antes de ir ao ar.</p>
+          </div>
+
+          <div class="passo__conector" aria-hidden="true"></div>
+
+          <div class="passo animate-on-scroll" role="listitem" style="--delay: 0.3s">
+            <div class="passo__numero" aria-hidden="true">04</div>
+            <div class="passo__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="9" stroke="#0E4F1F" stroke-width="1.5"/>
+                <path d="M14 5v2M14 21v2M5 14h2M21 14h2" stroke="#0E4F1F" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="14" cy="14" r="3" fill="#0E4F1F"/>
+              </svg>
+            </div>
+            <h3 class="passo__titulo">Você aparece no Google</h3>
+            <p class="passo__desc">Novos clientes te encontram toda hora. Seu negócio não para mais.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PORTFÓLIO
+    ════════════════════════════════════════════ -->
+    <section class="portfolio" id="portfolio" aria-label="Portfólio de sites criados">
+      <div class="container">
+        <h2 class="portfolio__title animate-on-scroll">Alguns dos sites que já viraram.</h2>
+
+        <div class="portfolio__grid">
+
+          <article class="portfolio-card animate-on-scroll" style="--card-bg: #1B3A2E;" aria-label="Site da Barbearia Dom">
+            <div class="portfolio-card__preview">
+              <div class="portfolio-card__mockup">
+                <div class="portfolio-card__mock-nav"></div>
+                <div class="portfolio-card__mock-hero"></div>
+                <div class="portfolio-card__mock-content">
+                  <div class="portfolio-card__mock-line"></div>
+                  <div class="portfolio-card__mock-line short"></div>
+                  <div class="portfolio-card__mock-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info">
+              <div>
+                <h3 class="portfolio-card__name">Barbearia Dom</h3>
+                <p class="portfolio-card__segment">Barbearia · São Paulo, SP</p>
+              </div>
+              <a href="https://wa.me/5500000000000" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver site da Barbearia Dom">
+                Ver site →
+              </a>
+            </div>
+          </article>
+
+          <article class="portfolio-card animate-on-scroll" style="--card-bg: #2C1F3B;" aria-label="Site da Clínica Nutri+">
+            <div class="portfolio-card__preview">
+              <div class="portfolio-card__mockup">
+                <div class="portfolio-card__mock-nav"></div>
+                <div class="portfolio-card__mock-hero" style="background: rgba(180,140,200,0.3);"></div>
+                <div class="portfolio-card__mock-content">
+                  <div class="portfolio-card__mock-line"></div>
+                  <div class="portfolio-card__mock-line short"></div>
+                  <div class="portfolio-card__mock-btn" style="background: rgba(180,140,200,0.4);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info">
+              <div>
+                <h3 class="portfolio-card__name">Clínica Nutri+</h3>
+                <p class="portfolio-card__segment">Nutrição · Belo Horizonte, MG</p>
+              </div>
+              <a href="https://wa.me/5500000000000" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver site da Clínica Nutri+">
+                Ver site →
+              </a>
+            </div>
+          </article>
+
+          <article class="portfolio-card animate-on-scroll" style="--card-bg: #3A1F1F;" aria-label="Site do Dr. Ferreira Odonto">
+            <div class="portfolio-card__preview">
+              <div class="portfolio-card__mockup">
+                <div class="portfolio-card__mock-nav"></div>
+                <div class="portfolio-card__mock-hero" style="background: rgba(200,160,140,0.3);"></div>
+                <div class="portfolio-card__mock-content">
+                  <div class="portfolio-card__mock-line"></div>
+                  <div class="portfolio-card__mock-line short"></div>
+                  <div class="portfolio-card__mock-btn" style="background: rgba(200,160,140,0.4);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info">
+              <div>
+                <h3 class="portfolio-card__name">Dr. Ferreira Odonto</h3>
+                <p class="portfolio-card__segment">Odontologia · Curitiba, PR</p>
+              </div>
+              <a href="https://wa.me/5500000000000" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver site do Dr. Ferreira Odonto">
+                Ver site →
+              </a>
+            </div>
+          </article>
+
+          <article class="portfolio-card animate-on-scroll" style="--card-bg: #1F2A3A;" aria-label="Site do Salão Éclat">
+            <div class="portfolio-card__preview">
+              <div class="portfolio-card__mockup">
+                <div class="portfolio-card__mock-nav"></div>
+                <div class="portfolio-card__mock-hero" style="background: rgba(140,170,200,0.3);"></div>
+                <div class="portfolio-card__mock-content">
+                  <div class="portfolio-card__mock-line"></div>
+                  <div class="portfolio-card__mock-line short"></div>
+                  <div class="portfolio-card__mock-btn" style="background: rgba(140,170,200,0.4);"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info">
+              <div>
+                <h3 class="portfolio-card__name">Salão Éclat</h3>
+                <p class="portfolio-card__segment">Beleza · Rio de Janeiro, RJ</p>
+              </div>
+              <a href="https://wa.me/5500000000000" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" aria-label="Ver site do Salão Éclat">
+                Ver site →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DEPOIMENTOS
+    ════════════════════════════════════════════ -->
+    <section class="depoimentos" aria-label="Depoimentos de clientes">
+      <div class="container">
+        <h2 class="depoimentos__title animate-on-scroll">Quem já virou.</h2>
+
+        <div class="depoimentos__grid">
+
+          <article class="depoimento animate-on-scroll" aria-label="Depoimento de Dra. Ana Paula">
+            <div class="depoimento__stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "Em 10 dias meu consultório já estava no Google. Dobrei os agendamentos no primeiro mês."
+            </blockquote>
+            <footer class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">AP</div>
+              <div>
+                <cite class="depoimento__nome">Dra. Ana Paula</cite>
+                <p class="depoimento__segmento">Nutricionista · São Paulo</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="depoimento animate-on-scroll" aria-label="Depoimento de João Marcos">
+            <div class="depoimento__stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "Achei que era caro, mas em 3 semanas o site já tinha se pago. Hoje o Google é meu maior vendedor."
+            </blockquote>
+            <footer class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">JM</div>
+              <div>
+                <cite class="depoimento__nome">João Marcos</cite>
+                <p class="depoimento__segmento">Barbearia Dom · Salvador</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="depoimento animate-on-scroll" aria-label="Depoimento de Camila">
+            <div class="depoimento__stars" aria-label="5 estrelas" aria-hidden="true">★★★★★</div>
+            <blockquote class="depoimento__texto">
+              "Fácil demais. Mandei o WhatsApp e duas semanas depois tava tudo no ar. Super recomendo."
+            </blockquote>
+            <footer class="depoimento__autor">
+              <div class="depoimento__avatar" aria-hidden="true">CA</div>
+              <div>
+                <cite class="depoimento__nome">Camila Andrade</cite>
+                <p class="depoimento__segmento">Salão Éclat · Rio de Janeiro</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA FINAL
+    ════════════════════════════════════════════ -->
+    <section class="cta-final" id="contato" aria-label="Chamada para ação">
+
+      <!-- Losango decorativo -->
+      <div class="cta-final__shape" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <polygon points="200,20 380,200 200,380 20,200" stroke="#0E4F1F" stroke-width="1.5" opacity="0.5"/>
+          <polygon points="200,60 340,200 200,340 60,200" stroke="#0E4F1F" stroke-width="1" opacity="0.3"/>
+          <polygon points="200,100 300,200 200,300 100,200" stroke="#0E4F1F" stroke-width="0.8" opacity="0.2"/>
+        </svg>
+      </div>
+
+      <div class="container cta-final__inner">
+        <h2 class="cta-final__title animate-on-scroll">Pronto pra virar?</h2>
+        <p class="cta-final__subtitle animate-on-scroll">
+          Manda um WhatsApp agora. A gente responde no mesmo dia.
+        </p>
+        <a href="https://wa.me/5500000000000" class="btn btn--whatsapp animate-on-scroll" target="_blank" rel="noopener noreferrer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.126 1.528 5.856L.057 23.571a.75.75 0 00.92.92l5.73-1.49A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.017-1.38l-.36-.213-3.728.97.993-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/>
+          </svg>
+          Falar no WhatsApp →
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo" id="footer">
+    <div class="footer__inner container">
+
+      <div class="footer__brand">
+        <a href="#" class="footer__logo" aria-label="Vira — início">VIRA</a>
+        <p class="footer__tagline">O Brasil está online.<br />Seu negócio ainda não.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Vira no Instagram" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5500000000000" class="footer__social-link" aria-label="Vira no WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.126 1.528 5.856L.057 23.571a.75.75 0 00.92.92l5.73-1.49A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.017-1.38l-.36-.213-3.728.97.993-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4 class="footer__col-title">Serviços</h4>
+          <ul>
+            <li><a href="#servicos" class="footer__link">Landing Page</a></li>
+            <li><a href="#servicos" class="footer__link">Site Completo</a></li>
+            <li><a href="#servicos" class="footer__link">Manutenção</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Empresa</h4>
+          <ul>
+            <li><a href="#como-funciona" class="footer__link">Como funciona</a></li>
+            <li><a href="#portfolio" class="footer__link">Portfólio</a></li>
+            <li><a href="#contato" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5500000000000" class="footer__link" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:oi@vira.com.br" class="footer__link">oi@vira.com.br</a></li>
+            <li><span class="footer__link footer__link--muted">Brasil · Remoto</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>Vira · 2026 · Negócios brasileiros no mundo digital</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5500000000000"
+     class="whatsapp-fab"
+     id="whatsappFab"
+     aria-label="Falar com a Vira no WhatsApp"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.126 1.528 5.856L.057 23.571a.75.75 0 00.92.92l5.73-1.49A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.017-1.38l-.36-.213-3.728.97.993-3.636-.234-.374A9.818 9.818 0 1112 21.818z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
